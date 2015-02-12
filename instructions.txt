@@ -23,9 +23,9 @@ from the cslcontrol file as to which of its own functions should be used. each o
 retreive data from a MySQL database.
 
 The main Javascript file is located in www/js called csl.js. It cantains all the get JSON requests,
- all the jQuery load() requests and controls the hiding and displaying of the different div windows.
-The other js file is the bootstrap one that controls all bootstrap features basic operation such as 
-navbar and modal. 
+the resulting DOM modifications, all the jQuery load() requests and controls the hiding and displaying 
+of the different div windows. The other js file is the bootstrap one that controls all bootstrap features 
+basic operation such as navbar and modal. 
 
 The main css file is main-styles.css that as well as controlling unique divs also modifies custom 
 Bootstrap css. Bootstrap css also here.
