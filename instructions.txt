@@ -1,3 +1,6 @@
+The code on this repo was done utilizing localhost through XAMPP.
+But a proper online view can be done through http://connacht-sl.netne.net
+
 This is layed out using Codeigniter so the main html display code is on a view file
 This View file is located in www/applications/views/csldisplay.php
 
@@ -8,6 +11,7 @@ There are two Controller files.The first called cslcontrol.php contains the func
 that are endpoints for the urls used in getJSON requests. Its functions take the requests
 and turns them into instructions for the Model file. It then takes the Model files response
 and assigns it to the csl_view.php where its encode and displayed as JSON.
+(if you wish to view a JSON example from this go to http://connacht-sl.netne.net/index.php/cslcontrol/titleWin)
 
 The second Controller called cslhome.php contains an index function that activates when the
 user first requests the site and basically displays the main html view.
