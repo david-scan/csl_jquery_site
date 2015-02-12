@@ -1,0 +1,29 @@
+This is layed out using Codeigniter so the main html display code is on a view file
+This View file is located in www/applications/views/csldisplay.php
+
+Another View file in the same location called csl_view.php is used to display the JSON 
+that is is retrieved via  a Controller file and Model file from a MySQL database.
+
+There are two Controller files.The first called cslcontrol.php contains the functions
+that are endpoints for the urls used in getJSON requests. Its functions take the requests
+and turns them into instructions for the Model file. It then takes the Model files response
+and assigns it to the csl_view.php where its encode and displayed as JSON.
+
+The second Controller called cslhome.php contains an index function that activates when the
+user first requests the site and basically displays the main html view.
+
+Both Controllers are located in www/applications/controllers/
+
+The Model file cslmodel.php is located in  www/applications/models/ and takes instructions from
+from the cslcontrol file as to which of its own functions should be used. each of these function
+retreive data from a MySQL database.
+
+The main Javascript file is located in www/js called csl.js. It cantains all the get JSON requests,
+ all the jQuery load() requests and controls the hiding and displaying of the different div windows.
+The other js file is the bootstrap one that controls all bootstrap features basic operation such as 
+navbar and modal. 
+
+The main css file is main-styles.css that as well as controlling unique divs also modifies custom 
+Bootstrap css. Bootstrap css also here.
+
+The jQuery library is accessed through a CDN at the moment.
