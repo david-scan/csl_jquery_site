@@ -1,0 +1,475 @@
+@charset "utf-8";
+/*using times as the font to help wih the newspaper style*/
+body{
+	background-color:#ffffff;
+	font-family: "Times New Roman";
+	font-size:100%;
+	color:#000000;
+}
+
+.heading{
+	color:#FFFFFF;
+	background-color: #000000;
+	text-align:center;
+	padding:5% 0 1% 0;
+}
+/*want the heading to slant diagonally*/
+.heading h1{
+	
+	font-family: 'Anton', sans-serif;
+	font-size:3em;
+	vertical-align:top;
+	-ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+    margin:0 0 2% 0;
+	}
+.heading-subtext{
+	position:relative;
+	font-family:'Helvetica', Arial, sans-serif;
+	font-size:1.2em;
+	font-weight: bold;
+	text-align:right;
+	display:block;
+	padding:0 3% 0 0;
+	text-shadow:0px 0px 15px #ccc;
+	
+}
+
+/*these next two helped center the site*/
+.col-md-12{
+	padding-left:5%;
+	padding-right:5%;
+} 
+/*properties for navbar*/
+#csl-navbar{
+	background-color:#ffffff;
+	border-left:5px solid #000000 ;
+	border-right:5px solid #000000;
+	height:auto;
+}
+/*removing the gap between the menu toggle and first menu item*/
+.navbar-nav {
+	margin-top:0;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+/*
+#csl-navbar .navbar-default{
+	min-height:auto;
+}
+
+#csl-navbar .navbar-brand{
+	height:auto;
+}
+*/
+/*styling the toggle*/
+#csl-navbar .navbar-toggle{
+	padding:5px 8px;
+	margin:6px 15px 6px 0;
+}
+/*styling the list divs*/
+#csl-navbar li{
+	background-color:#FFFFFF;
+	border:#ffffff;
+	font-size:1.5em;
+	font-family:'Helvetica';
+	font-weight: bold;
+}
+/*enforcing styling on the list link text*/
+#csl-navbar li > a{
+  padding-top: 2%;
+  padding-bottom:2%;
+  color:#000;
+  border-bottom:solid #ccc 1px;
+}
+/*ensuring styling on the dropdown menu item matches others*/
+#csl-navbar .dropdown-menu li a{
+	font-size:0.7em;
+	font-family:'Helvetica';
+	font-weight: bold;
+}
+/*styling hover on menu items*/
+#csl-navbar li > a:hover{
+  background-color:#ccc;
+}
+/*may get this to reappear in a bigger screen width*/
+#csl-navbar .navbar-form{
+	display:none;
+}
+/*
+#csl-navbar .nav .navbar-nav{
+	margin-right: auto;
+	margin-left: auto;
+}*/
+/*getting rid of borders paticularly at the bottom*/
+.navbar-default{
+	border:none;
+}
+/*end of navbar styles on smallest screen size*/
+
+/*padding at the bottom so too avoid the carousel at the bottom*/
+.container{
+	padding-bottom:10%;
+}
+/*general style for all the main content divs*/
+.views{
+	position:relative;
+	width:100%;
+	background-color:#ffffff;
+	border-left:5px solid #000000 ;
+	border-right:5px solid #000000;
+	border-bottom:5px solid #000000;
+	padding:3% 2% 10% 2%;
+	margin-top:0;
+}
+
+/*styling specific to the home view*/
+#home-body{
+	color:#ffffff;
+	font-size:1.5em;
+	padding:4%;
+	height:auto;
+}
+/*large image on the home view wont appear till a larger screen size*/
+#home_image{
+	display:none;
+}
+/*div on home view that contains Irish Newspaper archive logo*/
+#ina_logo{
+	position:relative;
+	text-align:right;
+	vertical-align:bottom;
+}
+/*end of home view style*/
+
+/*styling for the divs accessed through the history menu link*/
+#eighties, #nineties{
+	padding-left:0;
+	padding-right:0;
+}
+#eighties h1, #nineties h1{
+font-family: 'Helvetica';
+font-size: 1.5em;
+font-weight: bold;
+margin-bottom: 0;
+padding:2% 3% 0 3%;
+}
+#eighties p, #nineties p{
+	padding:1% 3% 2% 3%;
+}
+#eighties_text>h1:nth-child(4n+1), #eighties_text>p:nth-child(4n+2), #nineties_text>h1:nth-child(4n+1), #nineties_text>p:nth-child(4n+2){
+background-color:#CCC;
+}
+/*end of style for eighties and nineties divs*/
+
+/*style for the club view*/
+#club_info{
+	text-align:center;
+}
+/*style for the club name links in the club view div*/
+.name{
+	width:40%;
+	display:inline-block;
+	text-align:left;
+	font-family:"Helvetica";
+	font-weight:bold;
+	font-size:1.2em;
+	color:#ffffff;
+	background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/bg.png") repeat;
+	border:2px solid;
+	border-color:#000000;
+	padding-left:3%;
+	padding-top:2%;
+	padding-bottom:2%;
+	margin:1.5% 4% 1.5% 4%;
+}
+.name:nth-child(5n), .name:nth-child(3n){
+	-ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);	
+}
+.name:nth-of-type(n+1):nth-of-type(odd):nth-of-type(-n+3), .name:nth-of-type(n+18):nth-of-type(-n+19){
+	-ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+  }
+/*end of style for Club view div*/
+
+  /*Styling the modal and the data that will be dynamically inserted*/
+.modal-dialog{
+	width:80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}  
+.modal-body{
+	color:#000000;
+	text-align:left;
+	padding:4% 4% 2% 4%;
+	background-color:#FFF;
+}
+.modal-body h1{
+font-family: 'Helvetica';
+font-size: 1.5em;
+font-weight: bold;
+	margin:0 0 0.4em 0;
+	display:inline-block;
+
+	}
+.modal-body h2{
+font-family: 'Helvetica';
+font-size: 1.2em;
+font-weight:normal;
+	margin:0 0 0.4em 0;
+	display:inline-block;
+
+	}
+.modal-footer{
+	margin-top:0;
+	padding:1% 4% 4% 4%;
+}
+/*this displays and styles the table showcasing the honours of the individual club
+whose info is currently in the modal. it appears in the footer*/
+#honour-display{
+	margin-top:2%;
+	text-align: center;
+}
+#honour-display .table{
+	margin-bottom:0;
+}
+
+#honstab >tbody{
+	position:relative;
+	width:auto;
+	font-family: "Helvetica";
+	font-weight: bold;	
+}
+#honstab > tbody > tr > td{
+	position: relative;
+	border:0px;
+	text-align:center;
+	border-spacing:0px;
+	font-size:1em;
+	padding:2% 1.5% 2% 1.5%;
+}
+#honstab > tbody > tr > th{
+	position: relative;
+	text-align:center;
+	color:#ffffff;
+    background-color:#000000;
+	border:0px;
+	border-spacing:0px;
+	font-size:1em;
+	padding:2% 1.5% 2% 1.5%;
+}
+/*end of modal*/
+
+/*styling for the Champions view and Senior cup view div*/
+#champions h1, #senior_cup h1{
+font-family: 'Helvetica';
+font-size: 1.5em;
+font-weight: bold;
+}
+/*Giving a background color to every second row on champions and senior cup tables*/
+#senior_cup_finals > tbody > tr:nth-child(odd) > td,
+#senior_cup_finals > tbody > tr:nth-child(odd) > th, 
+#senior_champions > tbody > tr:nth-child(odd) > td,
+#senior_champions > tbody > tr:nth-child(odd) > th{
+  background-color:#666;
+}
+/*styling the cells and table headers*/
+#senior_cup_finals > tbody > tr > td,
+#senior_cup_finals > tbody > tr > th,
+#senior_champions > tbody > tr > td,
+#senior_champions > tbody > tr > th{
+	border:0px;
+	border-spacing:0px;
+	font-size:1em;
+	padding:2% 1.5% 2% 1.5%;
+}
+
+#senior_cup_finals > tbody,
+#senior_champions > tbody{
+	border-bottom: solid #ccc 1px
+}
+/*adjusting the text alignment on the cells on third column*/
+#senior_cup_finals > tbody > tr > td:nth-of-type(3),
+#senior_cup_finals > tbody > tr > th:nth-of-type(3)
+{
+	text-align:center;
+}
+/*adjusting the text alignment on the cells on fourth column*/
+#senior_cup_finals > tbody > tr > td:nth-of-type(4),
+#senior_cup_finals > tbody > tr > th:nth-of-type(4)
+{
+	text-align:right;
+}
+/*styling for footnotes that appear below both tables*/
+.notes{
+	font-size: 0.8em;
+}
+/*end of main div styles*/
+
+/*carousel styles*/
+#carousel-example-generic{
+	background-color:#000000;
+	position:fixed;
+	padding-top:1%;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:8%;
+}
+.carousel-inner{
+	position:relative;
+	text-align: center;
+	height:90%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  position:relative;
+  display: inline-block;
+  height:auto;
+  margin:2% 5% 0 5%;
+  width:5%;
+}
+
+
+
+@media (min-width: 480px){
+
+#carousel-example-generic{
+	height:10%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width:4%;
+   margin-top:0;
+}
+.collapse .row{
+	padding-bottom:15%;	
+
+}
+.collapse{
+	padding:0 5px 0 5px;
+	border-left:5px solid #000000 ;
+	border-right:5px solid #000000;
+}
+
+.heading{
+	font-size:1em;
+}
+.navbar-collapse{
+	padding-left:15px;
+	padding-right: 15px;
+}
+
+}
+
+@media (min-width:768px){
+body {
+  font-size:200%;  
+}
+.container{
+	width:98%;
+}
+.navbar-header{
+	height:1px;
+}
+.navbar-nav {
+	background-color:#FFFFFF;
+	position:relative;
+	width:100%;
+    margin: 0;
+    text-align: center;
+    vertical-align:text-top;
+  }
+ #csl-navbar > li {
+  	position:relative;
+    width:auto;
+	display:inline-block;
+	font-family:"Helvetica";
+	font-weight:bold;
+	text-align: left;
+	background-color:#FFFFFF;
+	padding:1% 3% 1% 1%;
+	vertical-align:top;
+	color:#000000;
+  }
+
+  #csl-navbar li > a{
+  	background-color:#FFFFFF;
+    display:inline-block;
+	border:none;
+	color:#000000;
+	font-size:0.7em;
+    border-bottom:0px;
+  }
+
+  .name{
+  	width:25%;
+  	padding-left:2%;
+  }
+  #home_image{
+  	padding:5%;
+  	position:relative;
+  	display:block;
+  	width:100%;
+  }
+  #home_image img{
+  	position:relative;
+  	display:block;
+  	width:100%;
+  }
+  .carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width:3%;
+}
+
+}
+
+@media (min-width:992px){
+
+ #csl-navbar > li { 
+	padding:1% 5% 1% 1%;
+  }
+
+  #csl-navbar li > a{ 
+	font-size:0.8em;
+  }
+   #csl-navbar .navbar-nav> li {
+  	padding:0% 1.5% 0% 0%;
+  }
+  #senior_cup_finals > tbody,
+#senior_champions > tbody{
+	width: 80%;
+}
+
+}
+
+@media (min-width:1200px){
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width:2.5%;
+}
+#csl-navbar .navbar-nav> li {
+  	padding:0% 1.5% 0% 0%;
+  }
+  #csl-navbar .navbar-nav {
+  	position:relative;
+  	width:75%;
+  	clear:none;
+  }
+
+  #csl-navbar .navbar-form{
+	display:inline-block;
+	padding-left: 0;
+	float:left;
+}
+
+}
